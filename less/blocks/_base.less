@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #000;
+    font-size: 24px;    
+
+    & ::selection {
+        background-color: #fbdc4d;
+    }
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4,h5, h6, p, ul, label {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea, button, input {
+    outline: none;
+}
+  
+button {                 // don't forget to add font-family and  
+    cursor: pointer;     // font-size for buttons inside project
+    padding: 0; 
+    border: 0;
+    background-color: transparent;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.none {
+    display: none !important;
+}
+
+.container {                 // 1200 и выше
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media(max-width:1199px) {  // от 992 до 1200
+        padding: 0 30px;
+    }
+    
+    @media(max-width:991px) {  // от 768 до 992
+    
+    }
+
+    @media(max-width:767px) {  // от 576 до 768
+        padding: 0 15px;
+
+    }
+
+    @media(max-width:575px) {  // от 320 до 576
+        
+    }
+}
+
+h2 {
+    text-shadow: 0 3px 42px #ffffff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
